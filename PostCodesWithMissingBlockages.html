@@ -1,0 +1,519 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_9bbd96f332e4466daae89f0c873ee2e8 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_9bbd96f332e4466daae89f0c873ee2e8" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_9bbd96f332e4466daae89f0c873ee2e8 = L.map('map_9bbd96f332e4466daae89f0c873ee2e8', {
+                                           center:[52.4784,-1.895224],
+                                           zoom: 10,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_66375aed8caf4eefba462471e73b31d3 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_9bbd96f332e4466daae89f0c873ee2e8);
+
+        
+        
+            
+
+            var circle_marker_e6ebc52484604d6c9248c449ee427b55 = L.circle(
+                [52.693267,-2.493912],
+                800,
+                {
+                    color: 'red',
+                    fillColor: 'red',
+                    fillOpacity: 10
+                    }
+                )
+                .addTo(map_9bbd96f332e4466daae89f0c873ee2e8);
+            
+        
+            
+            var popup_7586d21306184be0bf2ab0336b29277b = L.popup({maxWidth: '300'});
+
+            
+                var html_3d4fe2f7a0ee4edea6ff37232361bf54 = $('         <div id="html_3d4fe2f7a0ee4edea6ff37232361bf54"                 style="width: 100.0%; height: 100.0%;">                 Post Code TF1 2ND - Count 150</div>                 ')[0];
+                popup_7586d21306184be0bf2ab0336b29277b.setContent(html_3d4fe2f7a0ee4edea6ff37232361bf54);
+            
+
+            circle_marker_e6ebc52484604d6c9248c449ee427b55.bindPopup(popup_7586d21306184be0bf2ab0336b29277b);
+
+            
+        
+        
+            
+
+            var circle_marker_44e6f963ddfc418893bf06bba95c4104 = L.circle(
+                [52.47542,-1.849698],
+                600,
+                {
+                    color: 'purple',
+                    fillColor: 'purple',
+                    fillOpacity: 10
+                    }
+                )
+                .addTo(map_9bbd96f332e4466daae89f0c873ee2e8);
+            
+        
+            
+            var popup_ee026c1562714101acaf9755a2c13999 = L.popup({maxWidth: '300'});
+
+            
+                var html_fab9a6bf49594bd6be1c4899837ba661 = $('         <div id="html_fab9a6bf49594bd6be1c4899837ba661"                 style="width: 100.0%; height: 100.0%;">                 Post Code B9 5HB - Count 89</div>                 ')[0];
+                popup_ee026c1562714101acaf9755a2c13999.setContent(html_fab9a6bf49594bd6be1c4899837ba661);
+            
+
+            circle_marker_44e6f963ddfc418893bf06bba95c4104.bindPopup(popup_ee026c1562714101acaf9755a2c13999);
+
+            
+        
+        
+            
+
+            var circle_marker_00be43405d544aac973bd30b797e0012 = L.circle(
+                [52.487968,-1.957853],
+                500,
+                {
+                    color: 'orange',
+                    fillColor: 'orange',
+                    fillOpacity: 10
+                    }
+                )
+                .addTo(map_9bbd96f332e4466daae89f0c873ee2e8);
+            
+        
+            
+            var popup_1f1c37aed9a24a60892a6f2fdd14b12a = L.popup({maxWidth: '300'});
+
+            
+                var html_09bd586ddb624a2ba0e68a998836b9fd = $('         <div id="html_09bd586ddb624a2ba0e68a998836b9fd"                 style="width: 100.0%; height: 100.0%;">                 Post Code B66 3RX - Count 67</div>                 ')[0];
+                popup_1f1c37aed9a24a60892a6f2fdd14b12a.setContent(html_09bd586ddb624a2ba0e68a998836b9fd);
+            
+
+            circle_marker_00be43405d544aac973bd30b797e0012.bindPopup(popup_1f1c37aed9a24a60892a6f2fdd14b12a);
+
+            
+        
+        
+            
+
+            var circle_marker_d9a95ea6091e4bca830a007501b9f6d9 = L.circle(
+                [52.488184,-1.958221],
+                500,
+                {
+                    color: 'orange',
+                    fillColor: 'orange',
+                    fillOpacity: 10
+                    }
+                )
+                .addTo(map_9bbd96f332e4466daae89f0c873ee2e8);
+            
+        
+            
+            var popup_8b2bf668e70a4c1c8a273d1efd5c8168 = L.popup({maxWidth: '300'});
+
+            
+                var html_8a7a10cb829f4d31b2e8fa49731bb08c = $('         <div id="html_8a7a10cb829f4d31b2e8fa49731bb08c"                 style="width: 100.0%; height: 100.0%;">                 Post Code B66 3RU - Count 62</div>                 ')[0];
+                popup_8b2bf668e70a4c1c8a273d1efd5c8168.setContent(html_8a7a10cb829f4d31b2e8fa49731bb08c);
+            
+
+            circle_marker_d9a95ea6091e4bca830a007501b9f6d9.bindPopup(popup_8b2bf668e70a4c1c8a273d1efd5c8168);
+
+            
+        
+        
+            
+
+            var circle_marker_43769ca2112940c2b7da715951d04ba5 = L.circle(
+                [52.506262,-1.888296],
+                500,
+                {
+                    color: 'orange',
+                    fillColor: 'orange',
+                    fillOpacity: 10
+                    }
+                )
+                .addTo(map_9bbd96f332e4466daae89f0c873ee2e8);
+            
+        
+            
+            var popup_4da3d4a4d9a346af9eb16c4f3b0900a3 = L.popup({maxWidth: '300'});
+
+            
+                var html_c73e695e4fac4357a485e7e5f4d62a04 = $('         <div id="html_c73e695e4fac4357a485e7e5f4d62a04"                 style="width: 100.0%; height: 100.0%;">                 Post Code B6 6HS - Count 61</div>                 ')[0];
+                popup_4da3d4a4d9a346af9eb16c4f3b0900a3.setContent(html_c73e695e4fac4357a485e7e5f4d62a04);
+            
+
+            circle_marker_43769ca2112940c2b7da715951d04ba5.bindPopup(popup_4da3d4a4d9a346af9eb16c4f3b0900a3);
+
+            
+        
+        
+            
+
+            var circle_marker_e170544703554d4d9ce1144eb4786062 = L.circle(
+                [52.476536,-1.85068],
+                400,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 10
+                    }
+                )
+                .addTo(map_9bbd96f332e4466daae89f0c873ee2e8);
+            
+        
+            
+            var popup_ca282a37e5574e0e9bdc2221a557032e = L.popup({maxWidth: '300'});
+
+            
+                var html_fd11454ee8ff496f959dda7837189394 = $('         <div id="html_fd11454ee8ff496f959dda7837189394"                 style="width: 100.0%; height: 100.0%;">                 Post Code B9 5HF - Count 46</div>                 ')[0];
+                popup_ca282a37e5574e0e9bdc2221a557032e.setContent(html_fd11454ee8ff496f959dda7837189394);
+            
+
+            circle_marker_e170544703554d4d9ce1144eb4786062.bindPopup(popup_ca282a37e5574e0e9bdc2221a557032e);
+
+            
+        
+        
+            
+
+            var circle_marker_79474ba2a49b475693ff7492d250e6bb = L.circle(
+                [52.425475,-1.930559],
+                400,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 10
+                    }
+                )
+                .addTo(map_9bbd96f332e4466daae89f0c873ee2e8);
+            
+        
+            
+            var popup_3aa8b230fb6a41748dd32be0690534c1 = L.popup({maxWidth: '300'});
+
+            
+                var html_1e75817b78554706bf576927f217c261 = $('         <div id="html_1e75817b78554706bf576927f217c261"                 style="width: 100.0%; height: 100.0%;">                 Post Code B30 2DH - Count 46</div>                 ')[0];
+                popup_3aa8b230fb6a41748dd32be0690534c1.setContent(html_1e75817b78554706bf576927f217c261);
+            
+
+            circle_marker_79474ba2a49b475693ff7492d250e6bb.bindPopup(popup_3aa8b230fb6a41748dd32be0690534c1);
+
+            
+        
+        
+            
+
+            var circle_marker_a7a41078b3c741b78a14d0c0f6d69905 = L.circle(
+                [52.423759,-1.932267],
+                400,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 10
+                    }
+                )
+                .addTo(map_9bbd96f332e4466daae89f0c873ee2e8);
+            
+        
+            
+            var popup_450d5043326a45c3ae666eed67bcdfba = L.popup({maxWidth: '300'});
+
+            
+                var html_e4c400debd384b6c9a416eace5ada472 = $('         <div id="html_e4c400debd384b6c9a416eace5ada472"                 style="width: 100.0%; height: 100.0%;">                 Post Code B30 2EB - Count 44</div>                 ')[0];
+                popup_450d5043326a45c3ae666eed67bcdfba.setContent(html_e4c400debd384b6c9a416eace5ada472);
+            
+
+            circle_marker_a7a41078b3c741b78a14d0c0f6d69905.bindPopup(popup_450d5043326a45c3ae666eed67bcdfba);
+
+            
+        
+        
+            
+
+            var circle_marker_69acbef185084bb39007b13cd6747d70 = L.circle(
+                [52.478669,-1.977135],
+                400,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 10
+                    }
+                )
+                .addTo(map_9bbd96f332e4466daae89f0c873ee2e8);
+            
+        
+            
+            var popup_c58c203e59de4755b0bb9f411ece9e98 = L.popup({maxWidth: '300'});
+
+            
+                var html_3da1d4ebf2214ab08bc7635cad9df05c = $('         <div id="html_3da1d4ebf2214ab08bc7635cad9df05c"                 style="width: 100.0%; height: 100.0%;">                 Post Code B67 5HY - Count 43</div>                 ')[0];
+                popup_c58c203e59de4755b0bb9f411ece9e98.setContent(html_3da1d4ebf2214ab08bc7635cad9df05c);
+            
+
+            circle_marker_69acbef185084bb39007b13cd6747d70.bindPopup(popup_c58c203e59de4755b0bb9f411ece9e98);
+
+            
+        
+        
+            
+
+            var circle_marker_67560fec6614486aa495d19bfa881ddb = L.circle(
+                [52.53574,-2.043949],
+                400,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 10
+                    }
+                )
+                .addTo(map_9bbd96f332e4466daae89f0c873ee2e8);
+            
+        
+            
+            var popup_14b553f59fef42cf8b328e284faa72d2 = L.popup({maxWidth: '300'});
+
+            
+                var html_498e874c34424c5ba7713e9989d56544 = $('         <div id="html_498e874c34424c5ba7713e9989d56544"                 style="width: 100.0%; height: 100.0%;">                 Post Code DY4 0JY - Count 43</div>                 ')[0];
+                popup_14b553f59fef42cf8b328e284faa72d2.setContent(html_498e874c34424c5ba7713e9989d56544);
+            
+
+            circle_marker_67560fec6614486aa495d19bfa881ddb.bindPopup(popup_14b553f59fef42cf8b328e284faa72d2);
+
+            
+        
+        
+            
+
+            var circle_marker_4d60a32b48a3414ca14555a1ce9a85d7 = L.circle(
+                [52.504592,-1.8897],
+                400,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 10
+                    }
+                )
+                .addTo(map_9bbd96f332e4466daae89f0c873ee2e8);
+            
+        
+            
+            var popup_76df9752d6be40e89f88ea58b01b7ab5 = L.popup({maxWidth: '300'});
+
+            
+                var html_2af3e0dac381441fbc58740c31e5fcd2 = $('         <div id="html_2af3e0dac381441fbc58740c31e5fcd2"                 style="width: 100.0%; height: 100.0%;">                 Post Code B6 6ET - Count 42</div>                 ')[0];
+                popup_76df9752d6be40e89f88ea58b01b7ab5.setContent(html_2af3e0dac381441fbc58740c31e5fcd2);
+            
+
+            circle_marker_4d60a32b48a3414ca14555a1ce9a85d7.bindPopup(popup_76df9752d6be40e89f88ea58b01b7ab5);
+
+            
+        
+        
+            
+
+            var circle_marker_cff30edc0f244aadbdef0de443169aea = L.circle(
+                [52.522771,-1.901961],
+                400,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 10
+                    }
+                )
+                .addTo(map_9bbd96f332e4466daae89f0c873ee2e8);
+            
+        
+            
+            var popup_218a40e2285f4f41b555f2ae40f72510 = L.popup({maxWidth: '300'});
+
+            
+                var html_d5a16d091572447c85582be27b36515c = $('         <div id="html_d5a16d091572447c85582be27b36515c"                 style="width: 100.0%; height: 100.0%;">                 Post Code B42 1UD - Count 41</div>                 ')[0];
+                popup_218a40e2285f4f41b555f2ae40f72510.setContent(html_d5a16d091572447c85582be27b36515c);
+            
+
+            circle_marker_cff30edc0f244aadbdef0de443169aea.bindPopup(popup_218a40e2285f4f41b555f2ae40f72510);
+
+            
+        
+        
+            
+
+            var circle_marker_bfb008b7b671488584984a39afb70801 = L.circle(
+                [52.438977,-1.928773],
+                400,
+                {
+                    color: 'black',
+                    fillColor: 'black',
+                    fillOpacity: 10
+                    }
+                )
+                .addTo(map_9bbd96f332e4466daae89f0c873ee2e8);
+            
+        
+            
+            var popup_7238010b0d1e479195b2d8ee5019ed50 = L.popup({maxWidth: '300'});
+
+            
+                var html_7fb84b9d5f7f43e88758426b80ef03b0 = $('         <div id="html_7fb84b9d5f7f43e88758426b80ef03b0"                 style="width: 100.0%; height: 100.0%;">                 Post Code B29 6BY - Count 41</div>                 ')[0];
+                popup_7238010b0d1e479195b2d8ee5019ed50.setContent(html_7fb84b9d5f7f43e88758426b80ef03b0);
+            
+
+            circle_marker_bfb008b7b671488584984a39afb70801.bindPopup(popup_7238010b0d1e479195b2d8ee5019ed50);
+
+            
+        
+        
+        
+        </script>
+        
